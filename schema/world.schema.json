@@ -42,6 +42,7 @@
           "allOf": [
             { "$ref": "#/$defs/base" },
             {
+              "type": "object",
               "properties": {
                 "type": { "const": "text" },
                 "content": { "type": "string", "maxLength": 10000 },
@@ -49,7 +50,7 @@
                 "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
               },
               "required": ["content"],
-              "additionalProperties": false
+              "unevaluatedProperties": false
             }
           ]
         },
@@ -57,13 +58,14 @@
           "allOf": [
             { "$ref": "#/$defs/base" },
             {
+              "type": "object",
               "properties": {
                 "type": { "const": "image" },
-                "src": { "type": "string", "maxLength": 2048 },
+                "src": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
                 "alt": { "type": "string", "maxLength": 500 }
               },
               "required": ["src", "alt"],
-              "additionalProperties": false
+              "unevaluatedProperties": false
             }
           ]
         },
@@ -71,13 +73,14 @@
           "allOf": [
             { "$ref": "#/$defs/base" },
             {
+              "type": "object",
               "properties": {
                 "type": { "const": "link" },
                 "label": { "type": "string", "maxLength": 200 },
-                "href": { "type": "string", "maxLength": 2048 }
+                "href": { "type": "string", "pattern": "^(?:/|https://)", "maxLength": 2048 }
               },
               "required": ["label", "href"],
-              "additionalProperties": false
+              "unevaluatedProperties": false
             }
           ]
         },
@@ -85,13 +88,14 @@
           "allOf": [
             { "$ref": "#/$defs/base" },
             {
+              "type": "object",
               "properties": {
                 "type": { "const": "shape" },
                 "shape": { "enum": ["rectangle", "circle"] },
                 "fill": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
               },
               "required": ["shape", "fill"],
-              "additionalProperties": false
+              "unevaluatedProperties": false
             }
           ]
         }
