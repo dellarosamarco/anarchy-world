@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "route": "/",
+  "title": "AnarchyWorld",
+  "canvas": {
+    "background": "#0A0A0A"
+  },
+  "blocks": [
+    {
+      "id": "welcome-title",
+      "type": "text",
+      "x": 80,
+      "y": 90,
+      "width": 760,
+      "height": 100,
+      "content": "ANARCHY WORLD",
+      "fontSize": 64,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "welcome-copy",
+      "type": "text",
+      "x": 84,
+      "y": 205,
+      "width": 660,
+      "height": 90,
+      "content": "This page belongs to everyone. Change it.",
+      "fontSize": 24,
+      "color": "#A3A3A3"
+    },
+    {
+      "id": "manifesto-link",
+      "type": "link",
+      "x": 84,
+      "y": 320,
+      "width": 230,
+      "height": 52,
+      "label": "Open the manifesto →",
+      "href": "/manifesto"
+    }
+  ]
+}

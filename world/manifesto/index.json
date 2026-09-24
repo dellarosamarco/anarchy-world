@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "route": "/manifesto",
+  "title": "Manifesto",
+  "canvas": {
+    "background": "#111111"
+  },
+  "blocks": [
+    {
+      "id": "manifesto-title",
+      "type": "text",
+      "x": 80,
+      "y": 80,
+      "width": 760,
+      "height": 80,
+      "content": "Nothing is final.",
+      "fontSize": 56,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "manifesto-body",
+      "type": "text",
+      "x": 84,
+      "y": 190,
+      "width": 720,
+      "height": 220,
+      "content": "Every page is shared state. Every accepted change becomes history. The engine is protected; the world is mutable.",
+      "fontSize": 24,
+      "color": "#C7C7C7"
+    }
+  ]
+}
