@@ -49,10 +49,10 @@
                 "fontSize": { "type": "number", "minimum": 8, "maximum": 200 },
                 "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
               },
-              "required": ["content"],
-              "unevaluatedProperties": false
+              "required": ["content"]
             }
-          ]
+          ],
+          "unevaluatedProperties": false
         },
         {
           "allOf": [
@@ -64,10 +64,10 @@
                 "src": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
                 "alt": { "type": "string", "maxLength": 500 }
               },
-              "required": ["src", "alt"],
-              "unevaluatedProperties": false
+              "required": ["src", "alt"]
             }
-          ]
+          ],
+          "unevaluatedProperties": false
         },
         {
           "allOf": [
@@ -79,10 +79,10 @@
                 "label": { "type": "string", "maxLength": 200 },
                 "href": { "type": "string", "pattern": "^(?:/|https://)", "maxLength": 2048 }
               },
-              "required": ["label", "href"],
-              "unevaluatedProperties": false
+              "required": ["label", "href"]
             }
-          ]
+          ],
+          "unevaluatedProperties": false
         },
         {
           "allOf": [
@@ -94,10 +94,10 @@
                 "shape": { "enum": ["rectangle", "circle"] },
                 "fill": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
               },
-              "required": ["shape", "fill"],
-              "unevaluatedProperties": false
+              "required": ["shape", "fill"]
             }
-          ]
+          ],
+          "unevaluatedProperties": false
         }
       ]
     }
