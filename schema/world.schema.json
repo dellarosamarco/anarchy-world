@@ -61,7 +61,7 @@
               "type": "object",
               "properties": {
                 "type": { "const": "image" },
-                "src": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+                "src": { "type": "string", "pattern": "^/assets/[a-fA-F0-9]{64}\\.(?:png|jpg|gif|webp)$", "maxLength": 90 },
                 "alt": { "type": "string", "maxLength": 500 }
               },
               "required": ["src", "alt"]
